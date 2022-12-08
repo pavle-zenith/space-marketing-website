@@ -1,0 +1,89 @@
+@font-face { font-family: Phonk; src: url('phonk-regular-demo.otf'); } 
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+/* Utility classes */
+
+.container {
+    width:80%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.icons {
+    margin-left: 10px;
+}
+
+
+/* Utility classes */
+
+/* Site CSS */
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color:#152330;
+}
+
+#nav-logo{
+    width:auto;
+    height: 50px;
+}
+nav a {
+    color:#fff;
+    transition: 250ms ease-in-out;
+}
+.nav-right img {
+    width:24px;
+    filter: invert();
+    height:auto;
+   
+}
+
+.nav-right img:hover {
+    filter: invert(20%) sepia(69%) saturate(3317%) hue-rotate(208deg) brightness(90%) contrast(94%);
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right #contact {
+    border-right: 1px solid #fff;
+    padding-right: 10px;
+}
+
+.nav-content {
+    padding:30px 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-middle {
+    display:flex;
+    
+}
+nav a:hover {
+    color:#0854bb;
+}
+.nav-middle a+a{
+    margin-left: 30px;
+}
+
+.home-content h1, span {
+    color:#fff;
+    font-family: Phonk;
+}
+span {
+    color:#0854bb
+}
+/* Site CSS */
