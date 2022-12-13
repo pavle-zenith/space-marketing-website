@@ -188,7 +188,8 @@ button {
     
 }
 .feature-row > * {
-    flex-grow: 1;
+    flex: 1 1 0;
+    width: 0;
 }
 .feature-row:hover img {
     filter:grayscale(0%);
@@ -196,9 +197,11 @@ button {
 .feature-row img {
     transition: 1000ms ease-in-out;
     max-width: 100%;
+    /* height: 100%; */
+    height: 350px;
     object-fit: cover;
     border-radius: 7px 7px 0 0;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
 }
 .features {
     padding:5rem 0;
