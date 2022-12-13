@@ -7,6 +7,9 @@
     font-family: 'Inter';
 }
 
+html,body, .home {
+    height:100%;
+}
 /* Utility classes */
 
 .container {
@@ -29,9 +32,18 @@ a {
 }
 
 body {
-    background-color:#152330;
-}
+    background: rgb(0, 0, 0);
 
+}
+.home video {
+    opacity: 0.6;
+    position:fixed;
+    top:0;
+    left:0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
 #nav-logo{
     width:auto;
     height: 50px;
@@ -40,8 +52,12 @@ nav a {
     color:#fff;
     transition: 250ms ease-in-out;
 }
+nav {
+    display: flex;justify-content: center;
+}
 .nav-right img {
-    width:24px;
+    width:22px;
+    display:block;
     filter: invert();
     height:auto;
    
@@ -62,15 +78,16 @@ nav a {
 }
 
 .nav-content {
-    padding:30px 0;
+    height:120px;
     display:flex;
+    position: absolute;
     justify-content: space-between;
     align-items: center;
 }
 
 .nav-middle {
     display:flex;
-    
+    margin-left: 7rem;
 }
 nav a:hover {
     color:#0854bb;
@@ -78,12 +95,79 @@ nav a:hover {
 .nav-middle a+a{
     margin-left: 30px;
 }
-
+.home-content {
+    height:100%;
+    width:100%;
+    padding-bottom: 7rem;
+    display:flex;
+    align-items: center;
+}
+.home-text {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .home-content h1, span {
     color:#fff;
     font-family: Phonk;
 }
 span {
-    color:#0854bb
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    color: transparent;
+}
+.home button {
+    padding:1rem 4rem;
+    border-radius: 7px;
+    font-family: inherit;
+    cursor: pointer;
+    border: 0;
+    display:flex;
+    color:#fff;
+    -webkit-box-shadow: 1px 9px 27px 4px rgba(8,84,187,0.31); 
+    box-shadow: 1px 9px 27px 4px rgba(8,84,187,0.41);
+    background-color: #0854bb;
+    transition: 250ms ease-in-out;
+}
+.home button:hover {
+    background-color: #2f76da;
+    transform: scale(1.1);
+}
+.main-title {
+    font-size: clamp(30px,2.3vw,72px);
+   text-align: center;
+}
+
+.main-desc {
+    
+    width:40%;
+    margin:.5rem 0 2rem 0;
+    color:#d0d5dd;
+    line-height: 1.6;
+}
+.main-desc p {
+    text-align: center;
+}
+.custom-shape-divider-bottom-1670867033 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1670867033 svg {
+    position: relative;
+    display: block;
+    width: calc(131% + 1.3px);
+    height: 113px;
+}
+
+.custom-shape-divider-bottom-1670867033 .shape-fill {
+    fill: #FFFFFF;
 }
 /* Site CSS */
