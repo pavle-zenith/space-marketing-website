@@ -170,4 +170,33 @@ span {
 .custom-shape-divider-bottom-1670867033 .shape-fill {
     fill: #FFFFFF;
 }
+
+.features {
+    background-color: #080220;
+    color:#fff;
+}
+
+.section-title {
+    text-align: center;
+    font-size: clamp(30px,2.3vw,72px);
+    font-family: 'Phonk';
+}
+
+.feature-row {
+    display:flex;
+}
+.feature-row > * {
+    flex-grow: 1;
+}
+.feature-row img {
+    max-width: 100%;
+    border-radius: 7px;
+}
+.features {
+    padding:5rem 0;
+}
+.row-heading {
+    font-size: clamp(20px,1.7vw,50px);
+    font-family: 'Phonk';
+}
 /* Site CSS */
