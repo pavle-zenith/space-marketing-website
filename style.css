@@ -135,7 +135,7 @@ button:hover {
     transform: scale(1.1);
 }
 .main-title {
-    font-size: clamp(26px,2.3vw,72px);
+    font-size: clamp(23px,2.3vw,72px);
    text-align: center;
 }
 
