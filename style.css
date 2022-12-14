@@ -309,6 +309,7 @@ button:hover {
     background-color: #080831;
     z-index: 10;
     padding:10rem 0;
+    height:460px;
 }
 .cta video {
     position:absolute;
@@ -345,6 +346,7 @@ button:hover {
         flex-direction: column;
     }*/
     .feature-column {
+        margin:4rem 0;
         flex-direction: column;
         text-align: center;
     }
