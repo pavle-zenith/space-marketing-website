@@ -130,7 +130,7 @@ button {
     background-color: #0854bb;
     transition: 250ms ease-in-out;
 }
-.home button:hover {
+button:hover {
     background-color: #2f76da;
     transform: scale(1.1);
 }
