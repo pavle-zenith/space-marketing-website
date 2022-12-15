@@ -1,5 +1,7 @@
 @font-face { font-family: Phonk; src: url('phonk-regular-demo.otf'); } 
-
+html {
+    scroll-behavior: smooth;
+}
 * {
     margin:0;
     padding:0;
@@ -365,5 +367,10 @@ button:hover {
     }
     .ml {
         margin-left: 0;
+    }
+}
+@media screen and (max-width:500px) {
+    .feature-card {
+        transform:scale(0.9);
     }
 }
