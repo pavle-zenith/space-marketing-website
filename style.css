@@ -346,7 +346,7 @@ button:hover {
     margin-left: 2rem;
 }
 footer {
-    padding-bottom:7rem;
+    padding-bottom:calc(5.5rem + 60px);
     padding-top: 5.5rem;
     position:relative;
     color: #fff;
