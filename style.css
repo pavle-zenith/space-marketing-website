@@ -375,6 +375,9 @@ footer .footer-title {
 .bar-right {
     display:flex;
 }
+.bar-right img {
+    display:block;
+}
 .footer-bar {
     bottom: 0;
 position: absolute;
