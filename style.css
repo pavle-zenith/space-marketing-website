@@ -22,6 +22,10 @@ html,body, .home {
 
 .icons {
     margin-left: 10px;
+    width:22px;
+    display:block;
+    filter: invert();
+    height:auto;
 }
 
 
@@ -60,7 +64,7 @@ nav {
 .nav-right img {
     width:22px;
     display:block;
-    filter: invert();
+    
     height:auto;
    
 }
@@ -290,7 +294,9 @@ button:hover {
     -webkit-box-shadow: 1px 9px 27px 4px rgba(255, 255, 255, 0.06); 
     box-shadow: 1px 9px 50px 4px rgba(255, 255, 255, 0.06);
 }
-
+.col-right img {
+   
+}
 .col-desc {
     
     margin-top: 35px;
@@ -312,6 +318,8 @@ button:hover {
     z-index: 10;
     padding:10rem 0;
     height:460px;
+    /* -webkit-box-shadow: 1px 9px 27px 4px rgba(8,84,187,0.31); 
+    box-shadow: 1px 9px 27px 4px rgba(8,84,187,0.41); */
 }
 .cta video {
     position:absolute;
@@ -337,9 +345,53 @@ button:hover {
 .ml {
     margin-left: 2rem;
 }
+footer {
+    padding-bottom:7rem;
+    padding-top: 5.5rem;
+    position:relative;
+    color: #fff;
+    background-color: #000000;
+}
+footer .container {
+    display:flex;
+    justify-content: space-between;
+}
+footer .footer-title {
+    
+        font-size: clamp(20px,1.6vw,40px);
+        font-family: 'Phonk';
+}
+.info {
+    margin:25px 0;
+}
+.bolder {
+    font-weight: bolder;
+}
+.footer-bar .container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bar-right {
+    display:flex;
+}
+.footer-bar {
+    bottom: 0;
+position: absolute;
+width: 100%;
+padding: 20px 0;
+border-top: 1px solid #ffffff2e;
+}
+.contact-title {
+    display:flex;
+    align-items: center;
+}
 @media screen and (max-width:900px) {
     .desktop {
         display: none;
+    }
+    .home video {
+        object-fit: cover;
     }
     .mobile {
         display:block;
@@ -367,6 +419,9 @@ button:hover {
     }
     .ml {
         margin-left: 0;
+    }
+    .type-effect h1 {
+        height:160px;
     }
 }
 @media screen and (max-width:500px) {
