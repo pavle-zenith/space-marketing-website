@@ -58,15 +58,59 @@ nav a {
     color:#fff;
     transition: 250ms ease-in-out;
 }
+
+
+.mobile-nav {
+    position: fixed;
+    transition: 250ms ease-in-out;
+    width:100%;
+    right:0;top:0;
+    height:100%;
+    background: rgba(8, 10, 49, 0.69);
+    z-index: 40;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.4px);
+    -webkit-backdrop-filter: blur(8.4px);
+    border: 1px solid rgba(8, 10, 49, 0.3);
+}
+
+.mobile-nav-content {
+    padding:35px;
+    height:100%;
+}
+.top-mobile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:15px;
+}
+.top-mobile img {
+    filter:invert();
+}
+.moveNav {
+    transform:translateX(100%);
+}
+.middle-mobile {
+    height:100%;
+    font-size: 42px;
+    display:flex;
+    align-items: center;
+    justify-content: center;   
+    gap:80px;
+    flex-direction: column;
+}
+.middle-mobile a {
+    /* background-color: rgba(255, 255, 255, 0);
+    border-radius: 9px;
+    -webkit-box-shadow: 1px 9px 27px 4px rgba(255, 255, 255, 0.31);
+    box-shadow: 1px 9px 50px 4px rgba(255, 255, 255, 0.041); */
+}
 nav {
     display: flex;justify-content: center;
 }
-.nav-right img {
+.nav-right img, .mobile-nav-content img {
     width:22px;
-    display:block;
-    
     height:auto;
-   
 }
 
 .nav-right img:hover {
@@ -95,6 +139,7 @@ nav {
     display:flex;
     margin-left: 7rem;
 }
+
 nav a:hover {
     color:#0854bb;
 }
@@ -389,9 +434,15 @@ border-top: 1px solid #ffffff2e;
     display:flex;
     align-items: center;
 }
+.mobile-break {
+    display:none;
+}
 @media screen and (max-width:900px) {
     .desktop {
         display: none;
+    }
+    .mobile-break {
+        display:block;
     }
     .home video {
         object-fit: cover;
@@ -402,6 +453,9 @@ border-top: 1px solid #ffffff2e;
     /* .feature-row {
         flex-direction: column;
     }*/
+    .wrap {
+        font-size: 26px;
+    }
     .feature-column {
         margin:4rem 0;
         flex-direction: column;
@@ -425,6 +479,13 @@ border-top: 1px solid #ffffff2e;
     }
     .type-effect h1 {
         height:160px;
+    }
+    .main-desc p {
+        width: 80%;
+margin: 0 auto;
+    }
+    .type-effect {
+
     }
 }
 @media screen and (max-width:500px) {

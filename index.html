@@ -13,6 +13,18 @@
 </head>
 <body>
     <nav>
+        <div id="mobileNav" class="mobile-nav moveNav">
+            <div class="mobile-nav-content">
+                <div class="top-mobile">
+                    <a href=""  class="nav-item"><img style="display: block;" src="assets/images/instagram.svg" alt="instagram contact"></a>
+                    <a href=""  class="nav-item"><img style="display: block;" src="assets/images/whatsapp.svg" alt="whatsapp contact"></a>
+                    <img style="cursor:pointer;filter: invert();" onclick="toggleNav()" src="assets/images/x.svg" alt="">
+                </div>
+                <div class="middle-mobile">
+                    <a href="#" class="nav-item active">Home</a><a href="#features" class="nav-item">Services</a><a href="#cta" class="nav-item">About</a>
+                </div>
+            </div>
+        </div>
         <div class="nav-content container">
             <div class="nav-left">
                 <a class="nav-item" href="#"><img src="logonew.png" alt="Space Marketing Agency Logo" id="nav-logo"></a>  
@@ -24,7 +36,7 @@
                 <a href="" id="contact" class="nav-item desktop">Contact Us</a>
                 <a href="" class="nav-item icons desktop"><img src="assets/images/instagram.svg" alt="instagram contact"></a>
                 <a href="" class="nav-item icons desktop"><img src="assets/images/whatsapp.svg" alt="whatsapp contact"></a>
-                <a href="" class="nav-item icons mobile"><img src="assets/images/menu.svg" alt="menu icon"></a>
+                <img  style="cursor:pointer;" class="nav-item icons mobile" onclick="toggleNav()" src="assets/images/menu.svg"  alt="menu icon">
             </div>
         </div>
     </nav>
@@ -145,7 +157,7 @@
                   
                   <div class="type-effect">
 
-                      <h1>Helping you<p style="display: inline; font-family: 'Inter' !important;">&nbsp;</p><a href="" class="typewrite hy" data-period="500" data-type='[ "scale your brand", "reach more clients", "get more sales" ]'></span>
+                      <h1>Helping you <br class="mobile-break"><p style="display: inline; font-family: 'Inter' !important;">&nbsp;</p><a href="" class="typewrite hy" data-period="500" data-type='[ "scale your brand", "reach more clients", "get more sales" ]'>
                           <span class="wrap"></span>
                         </a>
                       </h1>
@@ -190,6 +202,10 @@
         this.tick();
         this.isDeleting = false;
     };
+
+    function toggleNav() {
+            document.getElementById("mobileNav").classList.toggle("moveNav");
+        }
 
     TxtType.prototype.tick = function() {
         var i = this.loopNum % this.toRotate.length;
@@ -236,6 +252,8 @@
         css.type = "text/css";
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #ffffff}";
         document.body.appendChild(css);
+
+
     };
 </script>
 </body>
