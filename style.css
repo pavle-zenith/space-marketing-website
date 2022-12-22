@@ -6,11 +6,12 @@ html {
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Inter';
+   
 }
 
 html,body, .home {
     height:100%;
+    font-family: 'Inter';
 }
 /* Utility classes */
 
@@ -32,6 +33,41 @@ html,body, .home {
 /* Utility classes */
 
 /* Site CSS */
+
+.intro {
+    background: #080831;
+    position:fixed;
+    height:100%;
+    width:100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-text {
+    color:#fff;
+    font-family: 'Phonk';
+    font-size: clamp(20px, 2vw, 6rem);
+   
+}
+.slider {
+    background: #080220;
+    position:fixed;
+    height:100%;
+    width:100%;
+    z-index: 1001;
+    transform: translateY(100%);
+}
+
+.hide {
+    background:#080831;
+    overflow: hidden;
+}
+
+.hide div {
+    transform: translateY(100%);
+    display:inline-block;
+}
 
 a {
     text-decoration: none;
@@ -91,6 +127,7 @@ nav a {
     transform:translateX(100%);
 }
 .middle-mobile {
+    
     height:100%;
     font-size: 42px;
     display:flex;
@@ -100,6 +137,7 @@ nav a {
     flex-direction: column;
 }
 .middle-mobile a {
+    font-family: 'Phonk';
     /* background-color: rgba(255, 255, 255, 0);
     border-radius: 9px;
     -webkit-box-shadow: 1px 9px 27px 4px rgba(255, 255, 255, 0.31);
@@ -186,7 +224,7 @@ button:hover {
     transform: scale(1.1);
 }
 .main-title {
-    font-size: clamp(23px,2.3vw,72px);
+    font-size: clamp(20px,2.3vw,72px);
    text-align: center;
 }
 
@@ -198,7 +236,7 @@ button:hover {
     line-height: 1.6;
 }
 .main-desc p {
-    font-size: clamp(16px,0.81vw,32px);
+    font-size: clamp(13px,0.81vw,32px);
     text-align: center;
 }
 .custom-shape-divider-bottom-1670867033 {
@@ -294,6 +332,7 @@ button:hover {
     margin-bottom: 5px;
     color:black;
     font-weight: bolder;
+    font-weight: 500;
 }
 .card-description {
     color: #87888a;
@@ -343,7 +382,7 @@ button:hover {
    
 }
 .col-desc {
-    
+    line-height: 1.6;
     margin-top: 35px;
     color: #d0d5dd;
 }
@@ -491,5 +530,9 @@ margin: 0 auto;
 @media screen and (max-width:500px) {
     .feature-card {
         transform:scale(0.9);
+    }
+    .home video {
+        top: -41px;
+left: -375px;
     }
 }
