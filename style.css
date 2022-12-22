@@ -8,7 +8,10 @@ html {
     box-sizing: border-box;
    
 }
-
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 html,body, .home {
     height:100%;
     font-family: 'Inter';
@@ -47,7 +50,7 @@ html,body, .home {
 .intro-text {
     color:#fff;
     font-family: 'Phonk';
-    font-size: clamp(20px, 2vw, 6rem);
+    font-size: clamp(12px, 2vw, 6rem);
    
 }
 .slider {
@@ -94,7 +97,10 @@ nav a {
     color:#fff;
     transition: 250ms ease-in-out;
 }
-
+nav {
+    z-index: 100;
+    position: relative;
+}
 
 .mobile-nav {
     position: fixed;
