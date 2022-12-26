@@ -79,6 +79,7 @@ body {
 
 }
 .home video {
+    object-fit: cover;
     opacity: 0.6;
     position:fixed;
     top:0;
