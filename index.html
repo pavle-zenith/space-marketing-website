@@ -39,8 +39,8 @@
             />
           </div>
           <div class="middle-mobile">
-            <a href="#" class="nav-item active">Home</a
-            ><a href="#features" class="nav-item">Services</a
+            <a href="#" class="nav-item active">Home</a>
+            <a href="#features" class="nav-item">Services</a
             ><a href="#cta" class="nav-item">About</a>
           </div>
         </div>
@@ -60,7 +60,7 @@
           ><a href="#cta" class="nav-item">About</a>
         </div>
         <div class="nav-right">
-          <a href="" id="contact" class="nav-item desktop">Contact Us</a>
+          <a href="contact.html" id="contact" class="nav-item desktop">Contact Us</a>
           <a href="" class="nav-item icons desktop"
             ><img src="assets/images/instagram.svg" alt="instagram contact"
           /></a>
@@ -245,6 +245,9 @@
             font-family: "Phonk";
             font-weight: 400;
             font-size: 40px;
+            display: flex;
+            width: 100%;
+            justify-content: center;
           }
         </style>
 
@@ -315,10 +318,7 @@
         this.isDeleting = false;
       };
 
-      function toggleNav() {
-        document.getElementById("mobileNav").classList.toggle("moveNav");
-      }
-
+    
       TxtType.prototype.tick = function () {
         var i = this.loopNum % this.toRotate.length;
         var fullTxt = this.toRotate[i];
@@ -369,5 +369,10 @@
         document.body.appendChild(css);
       };
     </script>
+    <!--Start of Tawk.to Script-->
+    <!-- <script type="text/javascript">
+      
+      </script> -->
+  <!--End of Tawk.to Script-->
   </body>
 </html>

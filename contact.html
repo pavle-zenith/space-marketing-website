@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" href="logonew.png" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Marketing</title>
+  </head>
+<body>
+    <nav>
+        <div id="mobileNav" class="mobile-nav moveNav">
+          <div class="mobile-nav-content">
+            <div class="top-mobile">
+              <a href="" class="nav-item"
+                ><img
+                  style="display: block"
+                  src="assets/images/instagram.svg"
+                  alt="instagram contact"
+              /></a>
+              <a href="" class="nav-item"
+                ><img
+                  style="display: block"
+                  src="assets/images/whatsapp.svg"
+                  alt="whatsapp contact"
+              /></a>
+              <img
+                style="cursor: pointer; filter: invert()"
+                onclick="toggleNav()"
+                src="assets/images/x.svg"
+                alt=""
+              />
+            </div>
+            <div class="middle-mobile">
+              <a href="#" class="nav-item active">Home</a>
+                          </div>
+          </div>
+        </div>
+        <div class="nav-content container">
+          <div class="nav-left">
+            <a class="nav-item" href="#"
+              ><img
+                src="logonew.png"
+                alt="Space Marketing Agency Logo"
+                id="nav-logo"
+            /></a>
+          </div>
+          <div class="nav-middle desktop">
+            <a href="#" class="nav-item active">Home</a>
+           
+          </div>
+          <div class="nav-right">
+            <a href="#contact.html" id="contact" class="nav-item desktop">Contact Us</a>
+            <a href="" class="nav-item icons desktop"
+              ><img src="assets/images/instagram.svg" alt="instagram contact"
+            /></a>
+            <a href="" class="nav-item icons desktop"
+              ><img src="assets/images/whatsapp.svg" alt="whatsapp contact"
+            /></a>
+            <img
+              style="cursor: pointer"
+              class="nav-item icons mobile"
+              onclick="toggleNav()"
+              src="assets/images/menu.svg"
+              alt="menu icon"
+            />
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <video id="bg" autoplay muted playsinline="true" loop>
+            <source src="./assets/video2.mp4" type="" />
+          </video>
+          <div style="text-align: center;"  class="hero-text">
+
+              <h2 class="hero-title">
+                  SAY <span>HELLO</span> 
+              </h2>
+              <p class="hero-desc">LET'S GROW YOUR BRAND</p>
+          </div>
+          <div class="contact-form">
+             
+    
+  
+          </div>
+      </div>
+
+
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script> -->
+    <script src="app.js" defer></script>
+</body>
+</html>
