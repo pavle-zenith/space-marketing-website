@@ -508,7 +508,7 @@ border-top: 1px solid #ffffff2e;
 
 @media screen and (max-width:900px) {
     .desktop {
-        display: none;
+        display: none !important;
     }
     .mobile-break {
         display:block;
@@ -548,18 +548,24 @@ border-top: 1px solid #ffffff2e;
     }
     .type-effect h1 {
         height:160px;
+        display:flex;
+        flex-direction: column;
     }
+    .type-effect 
     .main-desc p {
         width: 80%;
 margin: 0 auto;
     }
     .type-effect {
-
+        
     }
 }
 @media screen and (max-width:500px) {
     .feature-card {
         transform:scale(0.9);
+    }
+    .intro-text {
+        transform:scale(0.8);
     }
     
 }
