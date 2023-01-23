@@ -1,4 +1,4 @@
-@font-face { font-family: Phonk; src: url('phonk-regular-demo.otf'); } 
+@font-face { font-family: Phonk; src: url('phonk-regular-demo.woff'); } 
 html {
     scroll-behavior: smooth;
 }
@@ -368,7 +368,10 @@ button:hover {
     align-items: center;
     display:flex;
     gap:40px;
-    margin:15rem 0;
+    margin:6rem 0 15rem 0;
+}
+.col-desc strong {
+    text-shadow: rgba(255, 255, 255, 0.36) 1px 0 10px;
 }
 .reverse {
     flex-direction: row-reverse;
@@ -455,6 +458,7 @@ footer .footer-title {
     margin:25px 0;
 }
 .bolder {
+    text-shadow: rgba(255, 255, 255, 0.36) 1px 0 10px;
     font-weight: bolder;
 }
 .footer-bar .container {
