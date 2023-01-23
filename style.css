@@ -495,7 +495,8 @@ border-top: 1px solid #ffffff2e;
 .hero {
     color:#fff;
     width:100%;
-    height:80%;
+    height:100%;
+    background-color: #080220a8;
     display:flex;
     flex-direction: column;
     align-items: center;
